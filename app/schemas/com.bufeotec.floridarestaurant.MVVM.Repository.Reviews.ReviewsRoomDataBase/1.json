@@ -1,0 +1,51 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "a9f05315c635e39634eea2a9b4583ee4",
+    "entities": [
+      {
+        "tableName": "lista_reviews",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`review_id` TEXT NOT NULL, `review_foto` TEXT, `review_nombre` TEXT, `review_descripcion` TEXT, PRIMARY KEY(`review_id`))",
+        "fields": [
+          {
+            "fieldPath": "review_id",
+            "columnName": "review_id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "review_foto",
+            "columnName": "review_foto",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "review_nombre",
+            "columnName": "review_nombre",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "review_descripcion",
+            "columnName": "review_descripcion",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "review_id"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, \"a9f05315c635e39634eea2a9b4583ee4\")"
+    ]
+  }
+}

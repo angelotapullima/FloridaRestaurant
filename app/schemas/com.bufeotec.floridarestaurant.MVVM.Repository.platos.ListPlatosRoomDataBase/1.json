@@ -1,0 +1,63 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "675e5db50d94b194f73b354bf6f5693d",
+    "entities": [
+      {
+        "tableName": "lista_platos",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`plato_id` TEXT NOT NULL, `plato_foto` TEXT, `plato_nombre` TEXT, `plato_descripcion` TEXT, `plato_precio` TEXT, `plato_disponibilidad` TEXT, PRIMARY KEY(`plato_id`))",
+        "fields": [
+          {
+            "fieldPath": "plato_id",
+            "columnName": "plato_id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "plato_foto",
+            "columnName": "plato_foto",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "plato_nombre",
+            "columnName": "plato_nombre",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "plato_descripcion",
+            "columnName": "plato_descripcion",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "plato_precio",
+            "columnName": "plato_precio",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "plato_disponibilidad",
+            "columnName": "plato_disponibilidad",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "plato_id"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, \"675e5db50d94b194f73b354bf6f5693d\")"
+    ]
+  }
+}

@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:background="#FFF"
+    tools:context=".MVVM.Views.Home.fragments.ReservarMesaFragment">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Reservar_una_mesa"
+                android:textColor="#000"
+                android:layout_marginBottom="5dp"
+                android:textSize="18sp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="5dp"
+                android:background="#F7F7F7"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="@string/lorep_ipsun"
+                android:textSize="15sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="10"
+                android:layout_marginBottom="24dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="5"
+                    android:layout_height="42dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/numero_de_invitados"/>
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="5"
+                    android:layout_height="42dp"
+                    android:gravity="center"
+                    android:textSize="14sp"
+                    android:background="@drawable/borde_gris_texto"
+                    android:hint="@string/numero_de_invitados"/>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="10"
+                android:layout_marginBottom="35dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="5"
+                    android:layout_height="42dp"
+                    android:gravity="center_vertical"
+                    android:text="Fecha de Reserva"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="5"
+                    android:layout_height="42dp"
+                    android:gravity="center"
+                    android:background="@drawable/borde_gris_texto"
+                    android:text="Fecha de Reserva"/>
+
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tiempo_de_reserva"
+                android:textColor="#000"
+                android:layout_marginBottom="19dp"
+                android:textSize="18sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="10"
+                android:layout_marginBottom="33dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="7"
+                    android:layout_height="42dp"
+                    android:gravity="center"
+                    android:background="@drawable/borde_gris_texto"
+                    android:text="@string/tiempo_de_reserva"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="42dp"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="42dp"
+                    android:gravity="center"
+                    android:background="@drawable/borde_gris_texto"
+                    android:text="@string/am"/>
+
+
+
+            </LinearLayout>
+
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="22dp"
+                android:background="#F7F7F7"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/informaci_n_de_contacto"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:layout_marginBottom="22dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="10"
+                android:layout_marginBottom="24dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="42dp"
+                    android:text="@string/nombre"/>
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="7"
+                    android:layout_height="42dp"
+                    android:gravity="center"
+                    android:background="@drawable/borde_gris_texto"
+                    android:textSize="14sp"
+                    android:hint="Angelo Tapullima Del Aguila"/>
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="10"
+
+                android:layout_marginBottom="24dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="42dp"
+                    android:text="Email"/>
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="7"
+                    android:layout_height="42dp"
+                    android:gravity="center"
+                    android:background="@drawable/borde_gris_texto"
+                    android:textSize="14sp"
+                    android:hint="angelo.anked@gmail.com"/>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="10"
+
+                android:layout_marginBottom="24dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="42dp"
+                    android:text="Teléfono"/>
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="7"
+                    android:layout_height="42dp"
+                    android:gravity="center"
+                    android:background="@drawable/borde_gris_texto"
+                    android:textSize="14sp"
+                    android:inputType="number"
+                    android:hint="959189224"/>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="10"
+
+                android:layout_marginBottom="24dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="120dp"
+                    android:text="Comentarios"/>
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="7"
+                    android:layout_height="120dp"
+                    android:gravity="center"
+                    android:lines="5"
+                    android:scrollbars="vertical"
+                    android:inputType="textMultiLine"
+                    android:background="@drawable/borde_gris_texto"
+                    android:textSize="14sp"
+                    android:hint="@string/lorep_ipsun"/>
+
+
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:background="@color/colorPrimary"
+                android:text="Reservar"
+                android:textColor="#FFF"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+
+
+
+</ScrollView>

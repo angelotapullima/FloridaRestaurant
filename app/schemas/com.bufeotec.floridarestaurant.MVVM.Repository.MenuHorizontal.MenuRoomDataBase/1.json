@@ -1,0 +1,45 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "b2b6903d5652f418e62ad732898b8289",
+    "entities": [
+      {
+        "tableName": "lista_menu",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`menu_id` TEXT NOT NULL, `menu_foto` TEXT, `menu_nombre` TEXT, PRIMARY KEY(`menu_id`))",
+        "fields": [
+          {
+            "fieldPath": "menu_id",
+            "columnName": "menu_id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "menu_foto",
+            "columnName": "menu_foto",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "menu_nombre",
+            "columnName": "menu_nombre",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "menu_id"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, \"b2b6903d5652f418e62ad732898b8289\")"
+    ]
+  }
+}
